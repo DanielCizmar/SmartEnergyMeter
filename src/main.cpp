@@ -11,7 +11,7 @@ void setup() {
   Serial.println("PZEM test starting...");
   
   // Ak by si chcel vynulovať energiu:
-  // pzem.resetEnergy();
+  pzem.resetEnergy();
 }
 
 void loop() {
