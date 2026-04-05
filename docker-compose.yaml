@@ -1,0 +1,24 @@
+services:
+  influxdb:
+    image: influxdb:2.7.12
+    container_name: influxdb
+    ports:
+      - "8086:8086"
+    volumes:
+      - influxdb-data:/var/lib/influxdb2
+
+  grafana:
+    image: grafana/grafana:13.0.0-23997854243
+    container_name: grafana
+    ports:
+      - "3000:3000"
+    volumes:
+      - grafana-data:/var/lib/grafana
+    depends_on:
+      - influxdb
+
+volumes:
+  influxdb-data:
+  grafana-data:
+
+# INFLUX_MAGIC_TOKEN = kuB_FOVDltLdrJ-VrZMyVYy3gLiB2YpC3uB8bCgX7klCsUmyGhZqAdQ1goD9wsotLaBwXuzMW1163rFL6WMbAQ==
