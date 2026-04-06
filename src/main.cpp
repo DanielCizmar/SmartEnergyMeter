@@ -3,10 +3,6 @@
 #include "pzem_reader.h"
 #include "wifi_manager.h"
 
-#define PZEM_RX_PIN 16
-#define PZEM_TX_PIN 17
-#define DATA_READ_INTERVAL 2000
-
 MeterData meterData;
 
 void setup() {
