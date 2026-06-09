@@ -2,6 +2,7 @@
 #include "config.h"
 #include "pzem_reader.h"
 #include "wifi_manager.h"
+#include "influx_writer.h"
 
 MeterData meterData;
 
@@ -13,6 +14,7 @@ void setup() {
   printWifiStatus();
 
   initPzem(Serial2, PZEM_RX_PIN, PZEM_TX_PIN);
+  initInflux();
 }
 
 void loop() {
@@ -22,6 +24,7 @@ void loop() {
 
   if (meterData.valid) {
       printMeterData(meterData);
+      sendMeterDataToInflux(meterData);
   } else {
       Serial.println("PZEM read failed.");
   }
