@@ -3,12 +3,17 @@
 
 #include <WiFi.h>
 #include <InfluxDbClient.h>
-
-static const char* INFLUXDB_BUCKET = "EnergyConsuption";
+#include <InfluxDbCloud.h>
 
 static const char* MEASUREMENT_NAME = "pzem_data";
 
-InfluxDBClient influxClient(INFLUXDB_URL, INFLUXDB_ORG, INFLUXDB_BUCKET, INFLUXDB_TOKEN);
+InfluxDBClient influxClient(
+    INFLUXDB_URL,
+    INFLUXDB_ORG,
+    INFLUXDB_BUCKET,
+    INFLUXDB_TOKEN,
+    InfluxDbCloud2CACert
+);
 
 Point meterPoint(MEASUREMENT_NAME);
 
