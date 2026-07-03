@@ -133,10 +133,6 @@ The printable box files are available in [`docs/3dprinting`](docs/3dprinting):
 - [`PZEM BOX.stl`](docs/3dprinting/PZEM%20BOX.stl)
 - [`PZEM BOX.svg`](docs/3dprinting/PZEM%20BOX.svg)
 
-Preview:
-
-![PZEM box drawing](docs/3dprinting/PZEM%20BOX.svg)
-
 ## Repository Layout
 
 ```text
