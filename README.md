@@ -2,6 +2,8 @@
 
 An ESP32-based IoT project for monitoring electrical energy consumption in real time.
 
+⚠️ This project involves mains voltage. Use proper isolation, enclosure, fuses, and qualified supervision. ⚠️
+
 This project is designed to measure key electrical parameters such as voltage, current, power, and total energy usage using an external power measurement module. The ESP32 processes the measured data and can later be integrated with monitoring platforms, dashboards, or cloud services for visualization, storage, and analysis.
 
 ## Overview
