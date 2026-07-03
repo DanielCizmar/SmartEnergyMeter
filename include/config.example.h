@@ -11,6 +11,7 @@
 
 #define INFLUXDB_URL "your_influxdb_url"
 #define INFLUXDB_ORG "your_influxdb_organization"
+#define INFLUXDB_BUCKET "your_influxdb_bucket"
 #define INFLUXDB_TOKEN "your_influxdb_token"
 
 #endif
