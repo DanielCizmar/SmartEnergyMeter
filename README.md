@@ -60,8 +60,8 @@ Fields written to InfluxDB:
 
 - ESP32 Arduino framework
 - PlatformIO
-- [`mandulaj/PZEM-004T-v30`](https://registry.platformio.org/libraries/mandulaj/PZEM-004T-v30)
-- [`tobiasschuerg/ESP8266 Influxdb`](https://registry.platformio.org/libraries/tobiasschuerg/ESP8266%20Influxdb)
+- [`mandulaj/PZEM-004T-v30`] library
+- InfluxDB library
 - InfluxDB
 - Grafana
 
